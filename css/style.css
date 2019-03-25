@@ -26,6 +26,10 @@ p, h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 /* menu */
 
 nav {
@@ -218,7 +222,6 @@ nav ul li a:hover {
 
 .content {
     margin: 0px 0px 50px 0;
-    padding: 30px;
     min-height: auto;
     padding-bottom: 55px;
 }
@@ -453,7 +456,7 @@ height: 500px;
 .card-1{
 
       line-height: 1.5;
-      padding: 38px;
+      padding: 30px;
       height: auto;
       background-color: white;
       padding-bottom: 48px;
@@ -463,10 +466,22 @@ height: 500px;
 .card-2{
 
       line-height: 1.5;
-      padding: 38px;
+      padding: 30px;
       height: auto;
       background-color: #bbb;
       padding-bottom: 48px;
+
+
+}
+
+.card-3{
+
+  line-height: 1.5;
+  padding: 30px;
+  height: auto;
+  background-color: black;
+  padding-bottom: 48px;
+  color: white;
 
 
 }
@@ -569,3 +584,15 @@ ul.breadcrumb {
     }
 
 /* end tab */
+
+/* video */
+
+iframe {
+  border: 0;
+}
+
+@media screen and (max-width: 800px) {
+  iframe {
+    width: 100%
+  }
+}
