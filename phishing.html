@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Malware | Cybersecurity</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="logo">
+          <a href="#">CYBERSECURITY</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a class="active" href="dos.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="breadcrumb-group">
+     <div class="breadtitle">
+            THREATS
+     </div>
+
+     <div class="breadright">
+            <ul class="breadcrumb">
+                    <li><a href="dos.html">Denial of Service</a></li>
+                    <li><a href="malware.html">Malware</a></li>
+                    <li><a href="sql-injection.html">SQL Injection</a></li>
+                    <li>Phishing</li>
+                    <li><a href="attacker-motivation.html">Attacker Motivation</a></li>
+                  </ul>
+     </div>
+    </div>
+
+    <div class="card-title" style="background-image: url(img/phishing.png); background-repeat: no-repeat; background-size: cover;
+    background-position: 50% 140%; background-attachment: fixed;">
+        <h1 class="title-1" style="color: #FFFFFF; text-shadow: 4px 3px 0 #7A7A7A; color: #FFFFFF;">Phishing</h1>
+    </div>
+
+    <div class="content">
+      <div class="card-1">
+        <h2 style="color: #002377">What is phishing?</h2><br>
+        <p>Phishing is a type of social engineering attack often used to steal user data, including login credentials and credit card numbers.
+          It occurs when an attacker, masquerading as a trusted entity, dupes a victim into opening an email, instant message, or text message.
+          The recipient is then tricked into clicking a malicious link, which can lead to the installation of malware,
+          the freezing of the system as part of a ransomware attack or the revealing of sensitive information.
+          <br><br>An attack can have devastating results. For individuals, this includes unauthorized purchases, the stealing of funds, or identify theft.
+          <br><br>Moreover, phishing is often used to gain a foothold in corporate or governmental networks as a part of a larger attack, such as an
+          <a target="_blank" href="https://www.incapsula.com/web-application-security/apt-advanced-persistent-threat.html">advanced persistent threat</a> (APT) event.
+          In this latter scenario, employees are compromised in order to bypass security perimeters, distribute malware inside a closed environment,
+          or gain privileged access to secured data.
+          <br><br>An organization succumbing to such an attack typically sustains severe financial losses in addition to declining market share, reputation, and consumer trust.
+          Depending on scope, a phishing attempt might escalate into a security incident from which a business will have a difficult time recovering.</p>
+
+          <br><br><h2 style="color: #002377">Phishing Techniques</h2><br>
+          <div class="phy-tech" style="margin: 0 50px">
+          <h3 style="color: darkred">Email Phishing Scams</h3><br>
+          <p>Email phishing is a numbers game. An attacker sending out thousands of fraudulent messages can net significant information and sums of money,
+            even if only a small percentage of recipients fall for the scam. As seen above, there are some techniques attackers use to increase their success rates.
+
+            <br><br>For one, they will go to great lengths in designing phishing messages to mimic actual emails from a spoofed organization.
+            Using the same phrasing, typefaces, logos, and signatures makes the messages appear legitimate.
+
+            <br><br>In addition, attackers will usually try to push users into action by creating a sense of urgency.
+            For example, as previously shown, an email could threaten account expiration and place the recipient on a timer.
+            Applying such pressure causes the user to be less diligent and more prone to error.
+
+            <br><br>Lastly, links inside messages resemble their legitimate counterparts, but typically have a misspelled domain name or extra subdomains.
+            In the above example, the myuniversity.edu/renewal URL was changed to myuniversity.edurenewal.com.
+            Similarities between the two addresses offer the impression of a secure link, making the recipient less aware that an attack is taking place.</p><br><br>
+
+            <img src="img/phi-tech.png" alt="phishing technique" style="display: block; margin-left: auto; margin-right: auto" width="50%">
+
+            <h3 style="color: darkred">Spear Phishing</h3><br>
+            <p>Spear phishing targets a specific person or enterprise, as opposed to random application users.
+              It’s a more in depth version of phishing that requires special knowledge about an organization, including its power structure.
+
+              <br><br><u>An attack might play out as follows:</u>
+              <ol>
+                <li>A perpetrator researches names of employees within an organization’s marketing department and gains access to the latest project invoices.</li><br>
+                <li>Posing as the marketing director, the attacker emails a departmental project manager (PM) using a subject line that reads, Updated invoice for Q3 campaigns.
+                  The text, style, and included logo duplicate the organization’s standard email template.</li><br>
+                  <li>A link in the email redirects to a password-protected internal document, which is in actuality a spoofed version of a stolen invoice.</li><br>
+                  <li>The PM is requested to log in to view the document. The attacker steals his credentials, gaining full access to sensitive areas within the organization’s network.</li>
+              </ol>
+              <br>By providing an attacker with valid login credentials, spear phishing is an effective method for executing the first stage of an APT.
+            </p>
+          </div>
+    </div>
+
+    <div class="card-2">
+      <h2 style="color: #002377">Phishing Attack Examples</h2><br>
+      <p>The following illustrates a common phishing scam attempt:</p>
+      <ol>
+        <li>A spoofed email ostensibly from myuniversity.edu is mass-distributed to as many faculty members as possible.</li><br>
+        <li>The email claims that the user’s password is about to expire. Instructions are given to go to myuniversity.edu/renewal to renew their password within 24 hours.<br><br>
+        <img src="img/phi-ex.png" alt="phishing example" style="display: block; margin-left: auto; margin-right: auto" width="50%"></li><br>
+      </ol>
+      <p>Several things can occur by clicking the link. For example:</p>
+      <ul>
+        <li>The user is redirected to myuniversity.edurenewal.com, a bogus page appearing exactly like the real renewal page, where both new and existing passwords are requested.
+          The attacker, monitoring the page, hijacks the original password to gain access to secured areas on the university network.</li><br>
+          <li>The user is sent to the actual password renewal page. However, while being redirected, a malicious script activates in the background to hijack the user’s session cookie.
+            This results in a <a target="_blank" href="https://www.incapsula.com/web-application-security/reflected-xss-attacks.html">reflected XSS</a> attack,
+            giving the perpetrator privileged access to the university network.</li>
+      </ul>
+    </div>
+    <div class="card-1">
+      <h1 style="color: #002377; text-align: center">Top-Clicked Phishing Tests</h1><br>
+      <img src="img/phi-top.png" alt="phishing example" style="display: block; margin-left: auto; margin-right: auto" width="40%"></li>
+      <br><br> <p style="text-align: center">Source:<a target="_blank" href="https://www.incapsula.com/web-application-security/phishing-attack-scam.html">Incapsula</a>,
+      <a target="_blank" href="https://www.csoonline.com/article/2117843/what-is-phishing-how-this-cyber-attack-works-and-how-to-prevent-it.html">CSO Online</a></p>
+    </div>
+    <div class="card-2">
+      <h1 style="color: #002377; text-align: center">Watch the video below to understand more about phishing.</h1><br>
+      <iframe style="display: block; margin-left: auto; margin-right: auto;" width="760" height="515" src="https://www.youtube.com/embed/BnmneAjVrM4" frameborder="0" allow="accelerometer;
+      autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+      <p style="text-align: center">Source:<a target="_blank" href="https://www.youtube.com/channel/UCGhEv7BFBWdo0k4UXTm2eZg">Kaspersky Lab</a></p>
+    </div>
+
+    </div>
+    <div class="footer">
+        <div class="contain">
+          <div class="col"></div>
+          <div class="col">
+            <h1>Threats</h1>
+              <ul>
+                <li><a href="dos.html">DDOS</a></li>
+                <li><a href="malware.html">Malware</a></li>
+                <li><a href="sql-injection.html">SQL Injection</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h1>Prevention</h1>
+            <ul>
+              <li><a href="software-updates.html">Software Updates</a></li>
+              <li><a href="password-change.html">Password Change</a></li>
+              <li><a href="data-backup.html">Data Backup</a></li>
+              <li><a href="unweb.html">Untrusted Websites</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Security</h1>
+            <ul>
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+          </div>
+          <div class="col social">
+            <p style="color: #fff; padding: 20px 0px 5px 0px;">&copy; By Ninja Turtle</p>
+            <ul>
+              <li><img src="img/badge-w.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+          <div class="clearfix"></div>
+          </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

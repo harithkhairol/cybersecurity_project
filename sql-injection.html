@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>SQL injection | Cybersecurity</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="logo">
+          <a href="#">CYBERSECURITY</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a class="active" href="dos.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="breadcrumb-group">
+     <div class="breadtitle">
+            THREATS
+     </div>
+
+     <div class="breadright">
+            <ul class="breadcrumb">
+                    <li><a href="dos.html">Denial of Service</a></li>
+                    <li><a href="malware.html">Malware</a></li>
+                    <li>SQL Injection</li>
+                    <li><a href="phishing.html">Phishing</a></li>
+                    <li><a href="attacker-motivation.html">Attacker Motivation</a></li>
+                  </ul>
+     </div>
+    </div>
+
+    <div class="card-title" style="background-image: url(img/sql-injection.png); background-repeat: no-repeat; background-size: cover;
+    background-position: 50% 280%; background-attachment: fixed;">
+        <h1 class="title-1" style="color: #FFFFFF; text-shadow: 4px 3px 0 #000; color: #ededed;">SQL Injection</h1>
+    </div>
+
+    <div class="content">
+      <div class="card-1">
+        <h2 style="color: #002377">What is SQL Injection?</h2><br>
+        <p>SQL injection, also known as SQLI, is a common attack vector that uses malicious SQL code for backend database manipulation to access information
+          that was not intended to be displayed. This information may include any number of items, including sensitive company data, user lists or private customer details.
+          <br><br>The impact SQL injection can have on a business is far reaching. A successful attack may result in the unauthorized viewing of user lists,
+          the deletion of entire tables and, in certain cases, the attacker gaining administrative rights to a database, all of which are highly detrimental to a business.
+          <br><br>When calculating the potential cost of a SQLI, it’s important to consider the loss of customer trust should personal information such as phone numbers,
+          addresses and credit card details be stolen. SQLi isn't some cutting edge NSA Shadow Brokers kit, it's so simple
+          <a target="_blank" href="https://www.troyhunt.com/hacking-is-childs-play-sql-injection/">a three-year old can do it</a>.</p>
+
+      <br><br><h2 style="color: #002377">SQL Injection Example</h2><br>
+      <p>An attacker wishing to execute SQL injection manipulates a standard SQL query to exploit non-validated input vulnerabilities in a database.
+        There are many ways that this attack vector can be executed, several of which will be shown here to provide you with a general idea about how SQLI works.
+        <br><br>For example, the above-mentioned input, which pulls information for a specific product, can be altered to read http://www.estore.com/items/items.asp?itemid=999 or 1=1.
+        <br><br>As a result, the corresponding SQL query looks like this:
+
+        <br><br><code style="background-color: #eee; border: 1px solid #999; display: block; padding: 20px">
+          SELECT ItemName, ItemDescription <br>
+          FROM Items <br>
+          WHERE ItemNumber = 999 OR 1=1</code>
+
+          <br>And since the statement 1 = 1 is always true, the query returns all of the product names and descriptions in the database, even those thay you may not be eligible to access.
+          <br><br>Attackers are also able to take advantage of incorrectly filtered characters to alter SQL commands, including using a semicolon to separate two fields.
+          <br><br>For example, this input http://www.estore.com/items/iteams.asp?itemid=999; DROP TABLE Users would generate the following SQL query:
+
+          <br><br><code style="background-color: #eee; border: 1px solid #999; display: block; padding: 20px">
+            SELECT ItemName, ItemDescription <br>
+            FROM Items <br>
+            WHERE ItemNumber = 999; DROP TABLE USERS</code>
+
+          <br>As a result, the entire user database could be deleted.
+          <br><br>Another way SQL queries can be manipulated is with a UNION SELECT statement. This combines two unrelated SELECT queries to retrieve data from different database tables.
+          <br><br>For example, the input http://www.estore.com/items/items.asp?itemid=999 UNION SELECT user-name, password FROM USERS produces the following SQL query:
+
+          <br><br><code style="background-color: #eee; border: 1px solid #999; display: block; padding: 20px">
+            SELECT ItemName, ItemDescription <br>
+            FROM Items <br>
+            WHERE ItemID = '999' UNION SELECT Username, Password FROM Users;</code>
+
+            <br>Using the UNION SELECT statement, this query combines the request for item 999’s name and description with another that pulls names and passwords
+            for every user in the database.
+      </p>
+    </div>
+
+    <div class="card-2">
+        <div class="title-3">
+            <h2>SQL Injection Basics Demonstration</h2>
+        </div>
+
+        <br><iframe style="display: block; margin-left: auto; margin-right: auto;" width="760" height="515" src="https://www.youtube.com/embed/h-9rHTLHJTY" frameborder="0" allow="accelerometer;
+        autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <br><p style="text-align: center">Source:<a target="_blank" href="https://www.youtube.com/channel/UCH5blYEvvzUcWD7ApRVP9Yg">Imperva</a>
+    </div>
+
+    <div class="card-1">
+      <br><h1 style="color: #002377; text-align: center; position: relative">Minimum due diligence</h1>
+      <img src="img/due.png" style=" margin-left: 62%; margin-top: -10%;" width="125">
+      <p style="margin-left: 20%; margin-right: 20%; text-align: center; font-size: 20px">SQL injection is the lowest of the low-hanging web application security fruit. This well-known attack vector is easily exploited by unsophisticated attackers,
+        but it is easily mitigated with a small amount of due diligence. In 2018 there is no longer any excuse for a web application to be vulnerable to SQL injection.
+        This is what minimum due diligence in web application security looks like, folks.</p>
+    </div>
+
+    <br><p style="text-align: center; padding-bottom: 30px;">Source:<a target="_blank" href="https://www.incapsula.com/web-application-security/sql-injection.html">Incapsula</a>,
+    <a target="_blank" href="https://www.csoonline.com/article/3257429/what-is-sql-injection-how-sqli-attacks-work-and-how-to-prevent-them.html">CSO Online</a></p>
+
+    </div>
+    <div class="footer">
+        <div class="contain">
+          <div class="col"></div>
+          <div class="col">
+            <h1>Threats</h1>
+              <ul>
+                <li><a href="dos.html">DDOS</a></li>
+                <li><a href="malware.html">Malware</a></li>
+                <li><a href="sql-injection.html">SQL Injection</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h1>Prevention</h1>
+            <ul>
+              <li><a href="software-updates.html">Software Updates</a></li>
+              <li><a href="password-change.html">Password Change</a></li>
+              <li><a href="data-backup.html">Data Backup</a></li>
+              <li><a href="unweb.html">Untrusted Websites</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Security</h1>
+            <ul>
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+          </div>
+          <div class="col social">
+            <p style="color: #fff; padding: 20px 0px 5px 0px;">&copy; By Ninja Turtle</p>
+            <ul>
+              <li><img src="img/badge-w.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+          <div class="clearfix"></div>
+          </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

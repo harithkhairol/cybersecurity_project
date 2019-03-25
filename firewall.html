@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Firewall</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="logo">
+          <a href="#">CYBERSECURITY</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="dos.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a class="active" href="security.html">Security</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="breadcrumb-group">
+     <div class="breadtitle">Security</div>
+
+     <div class="breadright">
+            <ul class="breadcrumb">
+              <li><a href="firewall.html" class="active">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+     </div>
+
+    </div>
+    <div class="card-title" style="background-image: url(img/firewall.png); background-size: cover;"><h1 class="title-1">Firewall</h1></div>
+
+
+    <div class="content">
+
+    <div class="card-1">
+      <p>A firewall is a network security device that monitors incoming and outgoing network traffic and permits or blocks data packets based on a
+         set of security rules. Its purpose is to establish a barrier between your internal network and incoming traffic from external sources
+         (such as the internet) in order to block malicious traffic like viruses and hackers.</p>
+    </div>
+
+    <div class="card-1">
+      <div class="title-3"><h1 style="text-align: left;">How Firewall Protect Your Computers</h1></div>
+      <p>Firewalls carefully analyze incoming traffic based on pre-established rules and filter traffic coming from unsecured or suspicious sources
+         to prevent attacks. Firewalls guard traffic at a computer’s entry point, called ports, which is where information is exchanged with external
+          devices. For example, “Source address 172.18.1.1 is allowed to reach destination 172.18.2.1 over port 22."</p><br>
+
+      <p>Think of IP addresses as houses, and port numbers as rooms within the house. Only trusted people (source addresses) are allowed to enter the
+         house (destination address) at all—then it’s further filtered so that people within the house are only allowed to access certain rooms
+         (destination ports), depending on if they're the owner, a child, or a guest. The owner is allowed to any room (any port), while children and
+         guests are allowed into a certain set of rooms (specific ports).</p>
+    </div>
+    <div class="card-1" style="text-align: center;">
+      <iframe width="680" height="380" align="center" src="https://www.youtube.com/embed/KZc1KaE1OKU"></iframe>
+    </div>
+
+    <div class="card-1">
+      <div class="title-3"><h1 style="text-align: left;">Types Of Firewall</h1>
+        <p>Here are five types of firewalls that have played significant roles as the firewall category has evolved:</p>
+    </div>
+      <ol style="text-align: center;">
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Next-generation firewalls (NGFW)</li>
+          <p style="padding-bottom: 20px;">combine traditional firewall technology with additional functionality, such as encrypted traffic inspection,
+          intrusion prevention systems, anti-virus, and more. Most notably, it includes deep packet inspection (DPI). While basic firewalls only look
+          at packet headers, deep packet inspection examines the data within the packet itself, enabling users to more effectively identify,
+          categorize, or stop packets with malicious data.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Proxy firewalls</li>
+          <p style="padding-bottom: 20px;">filter network traffic at the application level. Unlike basic firewalls, the proxy acts an intermediary
+          between two end systems. The client must send a request to the firewall, where it is then evaluated against a set of security rules
+          and then permitted or blocked. Most notably, proxy firewalls monitor traffic for layer 7 protocols such as HTTP and FTP, and use both
+          stateful and deep packet inspection to detect malicious traffic.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Network address translation (NAT) firewalls</li>
+          <p style="padding-bottom: 20px;">allow multiple devices with independent network addresses to connect to the internet using a single IP
+          address, keeping individual IP addresses hidden. As a result, attackers scanning a network for IP addresses can't capture specific details,
+          providing greater security against attacks. NAT firewalls are similar to proxy firewalls in that they act as an intermediary between a
+          group of computers and outside traffic.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Stateful multilayer inspection (SMLI) firewalls</li>
+          <p style="padding-bottom: 20px;">filter packets at the network, transport, and application layers, comparing them against known trusted
+          packets. Like NGFW firewalls, SMLI also examine the entire packet and only allow them to pass if they pass each layer individually.
+          These firewalls examine packets to determine the state of the communication (thus the name) to ensure all initiated communication is
+          only taking place with trusted sources.</p>
+      </ol>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="contain">
+          <div class="col"></div>
+          <div class="col">
+            <h1>Threats</h1>
+              <ul>
+                <li><a href="dos.html">DDOS</a></li>
+                <li><a href="malware.html">Malware</a></li>
+                <li><a href="sql-injection.html">SQL Injection</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h1>Prevention</h1>
+            <ul>
+              <li><a href="software-updates.html">Software Updates</a></li>
+              <li><a href="password-change.html">Password Change</a></li>
+              <li><a href="data-backup.html">Data Backup</a></li>
+              <li><a href="unweb.html">Untrusted Websites</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Security</h1>
+            <ul>
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+          </div>
+          <div class="col social">
+            <p style="color: #fff; padding: 20px 0px 5px 0px;">&copy; By Ninja Turtle</p>
+            <ul>
+              <li><img src="img/badge-w.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+          <div class="clearfix"></div>
+          </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

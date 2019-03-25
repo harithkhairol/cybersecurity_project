@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Security</title>
+  </head>
+
+  <style>
+  /* The Modal (background) */
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  }
+
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+  }
+
+  @keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+  }
+
+  /* The Close Button */
+  .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .modal-header {
+  padding: 15px 16px;
+  background-color: #3D4849;
+  color: white;
+  }
+
+  .modal-body {padding: 20px 16px;}
+
+  .modal-footer {
+  padding: 2px 16px;
+  background-color: white;
+  color: white;
+  text-align: right;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+
+  .button4:hover {background-color: #e7e7e7;}
+
+  a {
+    color: #000;
+}
+
+  </style>
+
+  <body>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="logo">
+          <a href="#">CYBERSECURITY</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="dos.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a class="active" href="security.html">Security</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="breadcrumb-group">
+     <div class="breadtitle">Security</div>
+
+     <div class="breadright">
+            <ul class="breadcrumb">
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+     </div>
+
+    </div>
+    <div class="card-title" style="background-image: url(img/security.jpg); background-size: cover;"><h1 class="title-1">Security</h1></div>
+
+
+    <div class="content">
+
+      <!-- Trigger/Open The Modal -->
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal" style="display:none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Firewall</h2>
+          </div>
+          <div class="modal-body">
+            <p>A firewall is a network security device that monitors incoming and outgoing network traffic and permits or blocks data packets based on a set of security rules. Its purpose is to establish a barrier between your internal network and incoming traffic from external sources.....</p>
+          </div>
+          <div class="modal-footer">
+            <a class="button button4" href="firewall.html">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal2" class="modal" style="display:none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span id="close2" class="close">&times;</span>
+            <h2>Antivirus</h2>
+          </div>
+          <div class="modal-body">
+            <p>Antivirus software is a class of program designed to prevent, detect and remove malware infections on individual computing devices, networks and IT systems. Antivirus software, originally designed to detect and remove viruses from computers, can also protect against a wide variety of threats, including other.....</p>
+          </div>
+          <div class="modal-footer">
+            <a class="button button4" href="antivirus.html">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal3" class="modal" style="display:none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span id="close3" class="close">&times;</span>
+            <h2>Sandbox</h2>
+          </div>
+          <div class="modal-body">
+            <p>Sandboxing is an important security technique that isolates programs, preventing malicious or malfunctioning programs from damaging or snooping on the rest of your computer. The software you use is already sandboxing much of the code you run every day. You can also create sandboxes of your own to test or analyze software in a protected environment.....</p>
+          </div>
+          <div class="modal-footer">
+            <a class="button button4" href="sandbox.html">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal4" class="modal" style="display:none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span id="close4" class="close">&times;</span>
+            <h2>Cryptographic Software</h2>
+          </div>
+          <div class="modal-body">
+            <p>Cryptography is a method of protecting information and communications through the use of codes so that only those for whom the information is intended can read and process it. The pre-fix "crypt" means "hidden" or "vault" and the suffix "graphy" stands for "writing.". In computer science, cryptography refers to secure information and communication.....</p>
+          </div>
+          <div class="modal-footer">
+            <a class="button button4" href="crypto.html">Read more</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="card-1">
+      <p>If your house is on fire what are the most likely things you will grab before leaving? It is highly likely that one of those things is actually something containing digital storage such as a computer, laptop, tablet or hard drive. These items usually contain important digital files such as photos, movies, documents, contracts and emails.</p><br>
+      <p>So if these digital files are so important then they need to be protected from all forms of danger including IT Threats such as hackers and cyber attackers. To some people this will make sense because they have experienced some form of a cyber attack but for some this will seem distant and foreign because it has never happened to them.</p>
+    </div>
+
+    <div class="card-1">
+      <div class="title-3"><h1 style="text-align: left;">4 Types Of Security</h1>
+    </div>
+      <ol style="text-align: center;">
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;"><a href="#" id="myBtn">Firewall</a></li>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;"><a href="#" id="myBtn2">Antivirus</a></li>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;"><a href="#" id="myBtn3">Sandbox</a></li>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;"><a href="#" id="myBtn4">Cryptographic Software</a></li>
+        </ol>
+    </div>
+
+    </div>
+    <div class="footer">
+        <div class="contain">
+          <div class="col"></div>
+          <div class="col">
+            <h1>Threats</h1>
+              <ul>
+                <li><a href="dos.html">DDOS</a></li>
+                <li><a href="malware.html">Malware</a></li>
+                <li><a href="sql-injection.html">SQL Injection</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h1>Prevention</h1>
+            <ul>
+              <li><a href="software-updates.html">Software Updates</a></li>
+              <li><a href="password-change.html">Password Change</a></li>
+              <li><a href="data-backup.html">Data Backup</a></li>
+              <li><a href="unweb.html">Untrusted Websites</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Security</h1>
+            <ul>
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+          </div>
+          <div class="col social">
+            <p style="color: #fff; padding: 20px 0px 5px 0px;">&copy; By Ninja Turtle</p>
+            <ul>
+              <li><img src="img/badge-w.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+          <div class="clearfix"></div>
+        </div>
+    </div>
+  </body>
+  <script>
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  var modal2 = document.getElementById('myModal2');
+  // Get the button that opens the modal
+  var btn2 = document.getElementById("myBtn2");
+  // Get the <span> element that closes the modal
+  var span2 = document.getElementById("close2");
+  // When the user clicks the button, open the modal
+  btn2.onclick = function() {
+    modal2.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span2.onclick = function() {
+    modal2.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal2.style.display = "none";
+    }
+  }
+
+  var modal3 = document.getElementById('myModal3');
+  // Get the button that opens the modal
+  var btn3 = document.getElementById("myBtn3");
+  // Get the <span> element that closes the modal
+  var span3 = document.getElementById("close3");
+  // When the user clicks the button, open the modal
+  btn3.onclick = function() {
+    modal3.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span3.onclick = function() {
+    modal3.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal3.style.display = "none";
+    }
+  }
+
+  var modal4 = document.getElementById('myModal4');
+  // Get the button that opens the modal
+  var btn4 = document.getElementById("myBtn4");
+  // Get the <span> element that closes the modal
+  var span4 = document.getElementById("close4");
+  // When the user clicks the button, open the modal
+  btn4.onclick = function() {
+    modal4.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span4.onclick = function() {
+    modal4.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal4.style.display = "none";
+    }
+  }
+
+  </script>
+  <script src="js/script.js"></script>
+</html>

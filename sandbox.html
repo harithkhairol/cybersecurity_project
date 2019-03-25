@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Sandbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <div class="logo">
+          <a href="#">CYBERSECURITY</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="dos.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a class="active" href="security.html">Security</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="breadcrumb-group">
+     <div class="breadtitle">Security</div>
+
+     <div class="breadright">
+            <ul class="breadcrumb">
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html" class="active">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+     </div>
+
+    </div>
+    <div class="card-title" style="background-image: url(img/sandbox.png); background-size: cover;"><h1 class="title-1">Sandbox</h1></div>
+
+
+    <div class="content">
+
+    <div class="card-1">
+      <p>Sandboxing is an important security technique that isolates programs, preventing malicious or malfunctioning programs from damaging or snooping on the rest of your computer. The software you use is already sandboxing much of the code you run every day.</p><br>
+      <p>You can also create sandboxes of your own to test or analyze software in a protected environment where it won’t be able to do any damage to the rest of your system.</p>
+    </div>
+
+    <div class="card-1">
+      <div class="title-3"><h1 style="text-align: left;">How Sandboxes Are Essential For Security</h1></div>
+      <p>A sandbox is a tightly controlled environment where programs can be run. Sandboxes restrict what a piece of code can do, giving it just as many permissions as it needs without adding additional permissions that could be abused.</p><br>
+      <p>For example, your web browser essentially runs web pages you visit in a sandbox. They’re restricted to running in your browser and accessing a limited set of resources — they can’t view your webcam without permission or read your computer’s local files. If websites you visit weren’t sandboxed and isolated from the rest of your system, visiting a malicious website would be as bad as installing a virus.</p><br>
+      <p>Google Chrome and Internet Explorer both run in a sandbox themselves. These browsers are programs running on your computer, but they don’t have access to your entire computer. They run in a low-permission mode. Even if the web page found a security vulnerability and managed to take control of the browser, it would then have to escape the browser’s sandbox to do real damage. By running the web browser with fewer permissions, we gain security.</p>
+    </div>
+
+    <div class="card-1" style="text-align: center;">
+      <iframe width="680" height="380" align="center" src="https://www.youtube.com/embed/29e0CtgXZSI"></iframe>
+    </div>
+
+    <div class="card-1">
+      <div class="title-3"><h1 style="text-align: left;">What’s Already Being Sandboxed</h1>
+        <p>Much of the code your devices run every day is already sandboxed for your protection:</p>
+    </div>
+      <ol style="text-align: center;">
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Web Pages</li>
+          <p style="padding-bottom: 20px;">Your browser essentially sandboxes the web pages it loads. Web pages can run JavaScript code, but this
+          code can’t do anything it wants — if JavaScript code tries to access a local file on your computer, the request will fail.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Browser Plug-in Content</li>
+          <p style="padding-bottom: 20px;">Content loaded by browser plug-ins — such as Adobe Flash or Microsoft Silverlight — is run in a sandbox, too. Playing a flash game on a web page is safer than downloading a game and running it as a standard program because Flash isolates the game from the rest of your system and restricts what it can do. Browser plug-ins, particularly Java, are a frequent target of attacks that use security vulnerabilities to escape this sandbox and do damage.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">PDFs and Other Documents</li>
+          <p style="padding-bottom: 20px;">Adobe Reader now runs PDF files in a sandbox, preventing them from escaping the PDF viewer and tampering with the rest of your computer. Microsoft Office also has a sandbox mode to prevent unsafe macros from harming your system.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Browsers and Other Potentially Vulnerable Applications</li>
+          <p style="padding-bottom: 20px;">Web browsers run in low-permission, sandboxed mode to ensure that they can’t do much damage if they’re compromised</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Mobile Apps</li>
+          <p style="padding-bottom: 20px;">Mobile platforms run their apps in a sandbox. Apps for iOS, Android, and Windows 8 are restricted from doing many of the things standard desktop applications can do. They have to declare permissions if they want to do something like access your location. In return, we gain some security.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Windows Programs</li>
+          <p style="padding-bottom: 20px;">User Account Control functions as a bit of a sandbox, essentially restricting Windows desktop applications from modifying system files without first asking you permission. Note that this is very minimal protection — any Windows desktop program could choose to sit in the background and log all your keystrokes, for example. User Account Control just restricts access to system files and system-wide settings.</p>
+      </ol>
+    </div>
+
+    <div class="card-1">
+      <div class="title-3"><h1 style="text-align: left;">How to Sandbox Any Program</h1>
+    </div>
+      <ol style="text-align: center;">
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Virtual Machines</li>
+          <p style="padding-bottom: 20px;">A virtual machine program like VirtualBox or VMware creates virtual hardware devices that it uses to run an operating system. The other operating system runs in a window on your desktop. This entire operating system is essentially sandboxed, as it doesn’t have access to anything outside of the virtual machine. You could install software on the virtualized operating system and run that software as if it were running on a standard computer.</p>
+        <li style="font-weight: bold; padding: 10px 0 10px 0; text-align: left;">Sandboxie</li>
+          <p style="padding-bottom: 20px;">Sandboxie is a Windows program that creates sandboxes for Windows applications. It creates isolated virtual environments for programs, preventing them from making permanent changes to your computer.</p>
+          <img src="img/sandboxie.png" alt="warn">
+      </ol>
+    </div>
+
+    </div>
+    <div class="footer">
+        <div class="contain">
+          <div class="col"></div>
+          <div class="col">
+            <h1>Threats</h1>
+              <ul>
+                <li><a href="dos.html">DDOS</a></li>
+                <li><a href="malware.html">Malware</a></li>
+                <li><a href="sql-injection.html">SQL Injection</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h1>Prevention</h1>
+            <ul>
+              <li><a href="software-updates.html">Software Updates</a></li>
+              <li><a href="password-change.html">Password Change</a></li>
+              <li><a href="data-backup.html">Data Backup</a></li>
+              <li><a href="unweb.html">Untrusted Websites</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Security</h1>
+            <ul>
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+          </div>
+          <div class="col social">
+            <p style="color: #fff; padding: 20px 0px 5px 0px;">&copy; By Ninja Turtle</p>
+            <ul>
+              <li><img src="img/badge-w.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+          <div class="clearfix"></div>
+          </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
