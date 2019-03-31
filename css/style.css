@@ -34,13 +34,12 @@ a {
 nav {
       padding: 8px;
       height: 80px;
-      border-bottom:  #3D4849 solid 9px;
+      border-bottom:  #070617 solid 10px;
 }
 
 .logo {
       float: left;
       padding: 8px;
-      margin-left: 16px;
       margin-top: 8px;
 }
 
@@ -91,7 +90,7 @@ nav ul li a:hover {
 
     }
 
-/* menu responsive */
+/* menu responsive
 
 @media screen and (max-width: 864px) {
 
@@ -182,6 +181,8 @@ nav ul li a:hover {
       }
 }
 
+*/
+
 #nav:checked + .nav-btn {
       transform: rotate(45deg);
 }
@@ -221,13 +222,24 @@ nav ul li a:hover {
 
 .content {
     min-height: auto;
+    width: 850px;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    width: 100%;
+    margin: none;
+  }
 }
 
 /* footer */
 
 .footer {
-  width: 100%;
   position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   height: auto;
   background-color: #070617;
 }
@@ -295,9 +307,15 @@ nav ul li a:hover {
   }
 }
 
+@media only screen and (max-width: 1080px) {
+  .footer .col {
+    width: 60%;
+  }
+}
+
 @media only screen and (max-width: 950px) {
   .footer .col {
-    width: 33%;
+    width: 53%;
   }
   .footer .col h1 {
     font-size: 16px;
@@ -309,7 +327,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 500px) {
     .footer .col {
-      width: 50%;
+      width: 60%;
     }
     .footer .col h1 {
       font-size: 16px;
@@ -369,10 +387,11 @@ height: 500px;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #696969;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  opacity: 0.6;
 }
 
 .active {
@@ -417,7 +436,7 @@ height: 500px;
       padding: 13px;
       vertical-align: middle;
       text-align: center;
-
+      background-attachment: fixed;
 
 
 }
@@ -466,7 +485,7 @@ height: 500px;
       padding: 30px;
       height: auto;
       padding-bottom: 30px;
-      background-color: #bbb;
+      background-color: #bdc3c7;
 
 
 }
@@ -491,7 +510,7 @@ height: 500px;
 .breadcrumb-group{
 
       height: 51px;
-      background-color: #3D4849;
+      background-color: #070617;
       color: white;
       padding: 13px;
 }
@@ -516,7 +535,7 @@ ul.breadcrumb {
     }
     ul.breadcrumb li+li:before {
       padding: 8px;
-      color: black;
+      color: white;
       content: "/\00a0";
     }
     ul.breadcrumb li a {
@@ -592,4 +611,284 @@ iframe {
   iframe {
     width: 100%
   }
+}
+
+/*back to threats button*/
+.goback {
+  position: fixed;
+  background-color: #008080;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 12px;
+  margin: 10px;
+}
+
+.goback:hover {
+  background-color: #333;
+  color: black;
+}
+
+/*go top button*/
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #008080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+#topBtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+.uparrow {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.headerbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #008080;
+  width: 0%;
+}
+
+.f-box {
+  background-color: transparent;
+  width: 186px;
+  height: 270px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.f-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal f when you move the mouse over the f box container */
+.f-box:hover .f-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.f-box-front, .f-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 7px;
+}
+
+/* Style the front side */
+.f-box-front {
+  background-color: #008080;
+  color: white;
+}
+
+.f-box-front h2 {
+  margin-top: 15px;
+}
+
+/* Style the back side */
+.f-box-back {
+  background-color: #008080;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.f-box-back p {
+  padding: 10%;
+  text-align: center;
+}
+
+.f-box-back button {
+  border-radius: 4px;
+  background-color: darkblue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  width: 80%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.f-box-back button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.f-box-back span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.f-box-back button:hover span {
+  padding-right: 25px;
+}
+
+.f-box-back button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* start home flip */
+
+
+.cont-1{
+  
+  text-align: center;
+  padding: 30px;
+  width: 23%;
+  margin: 18px;
+  border-radius: 25px;
+  background-color: #fff;
+  float: left;
+
+
+}
+
+
+
+.cont-1:hover #hid-1 {
+display: block;
+opacity: 1;
+}
+
+.cont-1 #hid-1 {
+display: none;
+opacity: 0.6;
+transition: 0.3s;
+
+}
+
+
+.flip-card {
+background-color: transparent;
+width: 300px;
+height: 300px;
+perspective: 1000px;
+float:left;
+margin-left: 33px;
+
+}
+
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+background-color: #bbb;
+color: black;
+z-index: 2;
+}
+
+.flip-card-back {
+background-color: #2980b9;
+color: white;
+transform: rotateY(180deg);
+z-index: 1;
+}
+
+/* start career */
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: center;
+  margin-top: 11px;
+margin-bottom: 15px;
 }

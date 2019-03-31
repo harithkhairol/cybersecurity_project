@@ -9,6 +9,14 @@
     <title>SQL injection | Cybersecurity</title>
   </head>
   <body>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><a class="uparrow"></a></button>
+    <div class="headerbar">
+      <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar"></div>
+      </div>
+    </div>
+
     <div class="container">
       <nav>
         <input type="checkbox" id="nav" class="hidden">
@@ -17,14 +25,15 @@
           <i></i>
           <i></i>
         </label>
+        <a href="index.html"><img src="img/badge-b.png" alt="cyber_security" style="float: left; width: 25px; margin-left: 19px; margin-top: 14px"></a>
         <div class="logo">
-          <a href="#">CYBERSECURITY</a>
+          <a href="index.html">CYBERSECURITY</a>
         </div>
         <div class="nav-wrapper">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="history.html">History</a></li>
-            <li><a class="active" href="dos.html">Threats</a></li>
+            <li><a class="active" href="threat.html">Threats</a></li>
             <li><a href="software-updates.html">Prevention</a></li>
             <li><a href="security.html">Security</a></li>
             <li><a href="career.html">Career</a></li>
@@ -48,6 +57,8 @@
                   </ul>
      </div>
     </div>
+
+    <a href="threat.html" class="goback">&laquo; Back to threat</a>
 
     <div class="card-title" style="background-image: url(img/sql-injection.png); background-repeat: no-repeat; background-size: cover;
     background-position: 50% 280%; background-attachment: fixed;">
@@ -98,7 +109,9 @@
             for every user in the database.
       </p>
     </div>
-
+  </div>
+  <div style="background-color: #bdc3c7;">
+    <div class="content">
     <div class="card-2">
         <div class="title-3">
             <h2>SQL Injection Basics Demonstration</h2>
@@ -109,16 +122,18 @@
 
         <br><p style="text-align: center">Source:<a target="_blank" href="https://www.youtube.com/channel/UCH5blYEvvzUcWD7ApRVP9Yg">Imperva</a>
     </div>
-
+    </div>
+  </div>
+  <div class="content">
     <div class="card-1">
-      <br><h1 style="color: #002377; text-align: center; position: relative">Minimum due diligence</h1>
-      <img src="img/due.png" style=" margin-left: 62%; margin-top: -10%;" width="125">
+      <br><h1 style="color: #002377; text-align: center; position: relative">Minimum due diligence</h1><br><br><br>
+      <img src="img/due.png" style=" margin-left: 43%; margin-top: -12%;" width="125">
       <p style="margin-left: 20%; margin-right: 20%; text-align: center; font-size: 20px">SQL injection is the lowest of the low-hanging web application security fruit. This well-known attack vector is easily exploited by unsophisticated attackers,
         but it is easily mitigated with a small amount of due diligence. In 2018 there is no longer any excuse for a web application to be vulnerable to SQL injection.
         This is what minimum due diligence in web application security looks like, folks.</p>
     </div>
 
-    <br><p style="text-align: center; padding-bottom: 30px;">Source:<a target="_blank" href="https://www.incapsula.com/web-application-security/sql-injection.html">Incapsula</a>,
+    <br><p style="text-align: center; padding-bottom: 30px;">Source: <a target="_blank" href="https://www.incapsula.com/web-application-security/sql-injection.html">Incapsula</a>,
     <a target="_blank" href="https://www.csoonline.com/article/3257429/what-is-sql-injection-how-sqli-attacks-work-and-how-to-prevent-them.html">CSO Online</a></p>
 
     </div>

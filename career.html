@@ -9,6 +9,7 @@
     <title>Career</title>
   </head>
   <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><a class="uparrow"></a></button>
     <div class="container">
       <nav>
         <input type="checkbox" id="nav" class="hidden">
@@ -17,17 +18,18 @@
           <i></i>
           <i></i>
         </label>
+        <a href="index.html"><img src="img/badge-b.png" alt="cyber_security" style="float: left; width: 25px; margin-left: 19px; margin-top: 14px"></a>
         <div class="logo">
-          <a href="#">CYBERSECURITY</a>
+          <a href="index.html">CYBERSECURITY</a>
         </div>
         <div class="nav-wrapper">
           <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="history.html">History</a></li>
-              <li><a href="dos.html">Threats</a></li>
-              <li><a href="software-updates.html">Prevention</a></li>
-              <li><a href="security.html">Security</a></li>
-              <li><a class="active" href="career.html">Career</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="threat.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a class="active" href="career.html">Career</a></li>
           </ul>
         </div>
       </nav>
@@ -36,17 +38,8 @@
     <div class="breadcrumb-group">
      <div class="breadtitle">Career</div>
 
-     <!-- <div class="breadright">
-            <ul class="breadcrumb">
-              <li><a href="software-updates.html">Software</a></li>
-              <li><a href="password-change.html">Password</a></li>
-              <li><a class="active" href="data-backup.html">Backup</a></li>
-              <li><a href="unweb.html">Untrusted Web</a></li>
-            </ul>
-     </div> -->
-
     </div>
-    <div class="card-title" style="background-image: url(img/career-3.jpg); background-size: cover;"><h1 class="title-1">Career</h1></div>
+    <div class="card-title" style="background-image: url(img/career-3.jpg); background-size: cover; background-attachment: unset !important;"><h1 class="title-1">Career</h1></div>
 
 
     <div class="content">
@@ -57,83 +50,64 @@
 
         Typical cyber security job titles and descriptions include:</p>
 
+        <br> <br>
 
+        <style>
 
-    </div>
-
-    <div class="card-3">
-
-     <div class="title-3"><h1>Security analyst</h1></div>
-
-     <p>Analyzes and assesses vulnerabilities in the infrastructure (software, hardware, networks), investigates using available tools and countermeasures to remedy the detected vulnerabilities, and recommends solutions and best practices. Analyzes and assesses damage to the data/infrastructure as a result of security incidents, examines available recovery tools and processes, and recommends solutions. Tests for compliance with security policies and procedures. May assist in the creation, implementation, or management of security solutions.</p>
-
-    </div>
-
-    <div class="card-1">
-
-        <div class="title-3"><h1>Security engineer</h1></div>
-
-        <p>Performs security monitoring, security and data/logs analysis, and forensic analysis, to detect security incidents, and mounts the incident response. Investigates and utilizes new technologies and processes to enhance security capabilities and implement improvements. May also review code or perform other security engineering methodologies.
-            </p>
-
-
-
-    </div>
-
-    <div class="card-2">
-
-        <div class="title-3"><h1>Security architect</h1></div>
-
-        <p>Designs a security system or major components of a security system, and may head a security design team building a new security system.
-            </p>
-
-
-    </div>
-
-    <div class="card-1">
-
-            <div class="title-3"><h1>Security administrator</h1></div>
-
-            <p>Installs and manages organization-wide security systems. This position may also include taking on some of the tasks of a security analyst in smaller organizations.</p>
-
-
-        </div>
-
-        <div class="card-3">
-
-                <div class="title-3"><h1>Chief Information Security Officer (CISO)
-                    </h1></div>
-
-                <p>A high-level management position responsible for the entire information security division/staff. The position may include hands-on technical work.
-                    </p>
-
-
+            </style>
+            </head>
+            <body>
+            
+         
+            <button class="accordion" ><h1 style="display:unset;">Security engineer</h1></button>
+            <div class="panel">
+                <p>Performs security monitoring, security and data/logs analysis, and forensic analysis, to detect security incidents, and mounts the incident response. Investigates and utilizes new technologies and processes to enhance security capabilities and implement improvements. May also review code or perform other security engineering methodologies.
+                </p>
             </div>
+            
+            <button class="accordion" ><h1 style="display:unset;">Security architect</h1></button>
+            <div class="panel">
+                <p>Designs a security system or major components of a security system, and may head a security design team building a new security system.
+                </p>
+            </div>
+            
+            <button class="accordion"><h1 style="display:unset;">Security administrator</h1></button>
+            <div class="panel">
+                <p>Installs and manages organization-wide security systems. This position may also include taking on some of the tasks of a security analyst in smaller organizations.</p>
+            </div>
+            
+            <button class="accordion"><h1 style="display:unset;">Chief Information Security Officer (CISO)</h1></button>
+            <div class="panel">
+                <p>A high-level management position responsible for the entire information security division/staff. The position may include hands-on technical work.
+                </p>
+            </div>
+            
+            <button class="accordion" ><h1 style="display:unset;">Chief Security Officer (CSO)</h1></button>
+            <div class="panel">
+                <p>Broad titles that encompass any one or all of the other roles or titles tasked with protecting computers, networks, software, data or information systems against viruses, worms, spyware, malware, intrusion detection, unauthorized access, denial-of-service attacks, and an ever increasing list of attacks by hackers acting as individuals or as part of organized crime or foreign governments.
+                </p>
+            </div>
+            
+            <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+      
 
-            <div class="card-1">
-
-                    <div class="title-3"><h1>Chief Security Officer (CSO)
-                        </h1></div>
-
-                    <p>A high-level management position responsible for the entire security division/staff. A newer position now deemed needed as security risks grow.
-
-                        </p>
-
-
-                </div>
-
-                <div class="card-2">
-
-                        <div class="title-3"><h1>Chief Security Officer (CSO)
-                            </h1></div>
-
-                        <p>Broad titles that encompass any one or all of the other roles or titles tasked with protecting computers, networks, software, data or information systems against viruses, worms, spyware, malware, intrusion detection, unauthorized access, denial-of-service attacks, and an ever increasing list of attacks by hackers acting as individuals or as part of organized crime or foreign governments.
-
-                            </p>
-
-
-                    </div>
-
+    </div>
+</div>
 
 
     <!-- <div class="card-1">

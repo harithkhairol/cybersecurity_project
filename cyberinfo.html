@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <title>Cyber Info</title>
+  </head>
+  <style>
+
+ .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+.boxy {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+
+.boxy::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+.left {
+  left: 0;
+}
+
+
+.right {
+  left: 50%;
+}
+
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+
+.right::after {
+  left: -16px;
+}
+
+
+.contenty {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .timeline::after {
+  left: 31px;
+  }
+
+
+  .boxy {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+
+  .boxy::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+
+  .right {
+  left: 0%;
+  }
+}
+
+
+  </style>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><a class="uparrow"></a></button>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <a href="index.html"><img src="img/badge-b.png" alt="cyber_security" style="float: left; width: 25px; margin-left: 19px; margin-top: 14px"></a>
+        <div class="logo">
+          <a href="index.html">CYBERSECURITY</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="history.html">History</a></li>
+            <li><a href="threat.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="breadcrumb-group">
+     <div class="breadtitle">CyberCrime</div>
+
+     <div class="breadright">
+            <ul class="breadcrumb">
+              <li>Info</li>
+              <li><a href="cybertype.html">CyberCrime Type</a></li>
+              <li><a href="cyberattack.html">CyberAttack</a></li>
+              <li><a href="crimetrend.html">Latest Trend in CyberAttack</a></li>
+            </ul>
+     </div>
+
+    </div>
+    <div class="card-title" style="background-image: url(img/cybercrime.jpg); background-size: cover;"><h1 class="title-1">History</h1></div>
+
+    <div class="content">
+
+    <div class="card-1">
+
+    <h1>What is CyberCrime?</h1>
+    <p>Computer-oriented crime or known as cybercrime, is a crime where a computer is the object of the crime or is used as
+      a tool to commit an offense. Cybercrimes can be defined as: "Offences that are committed against individuals or groups
+      of individuals with a criminal motive to intentionally
+      harm the reputation of the victim or cause physical or mental harm, or loss, to the victim directly or indirectly,
+      using modern telecommunication networks such as Internet (networks including chat rooms, emails, notice boards and
+      groups) and
+      mobile phones (Bluetooth/SMS/MMS)". Internationally, both governmental and non-state actors engage in cybercrimes,
+      including espionage, financial theft, and other cross-border crimes. Cybercrimes crossing international borders and
+      involving
+      the actions of at least one nation state is sometimes referred to as cyberwarfare.</p>
+    <br>
+
+    <div style="text-align: center;">
+        <img src="img/history-1.jpg" width="" alt="">
+    </div>
+  </div>
+    <br>
+    </div>
+    <div style="background-color: #bdc3c7;">
+    <div class="card-2">
+
+    <div class="timeline">
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>1903</h2>
+        <h4>Wireless telegraphy</h4>
+        <p>The discovery of electromagnetic waves in the late 19th century paved the way for Guglielmo Marconi's
+          wireless telegraph
+          and so the first true feat of hacking. In 1903, magician, inventor and wireless technology enthusiast
+          Nevil Maskelyne
+          disrupted John Ambrose Fleming's first public demonstration of Marconi's 'secure' wireless telegraphy
+          technology by
+          sending insulting Morse code messages discrediting the invention. In a letter to the Times newspaper,
+          Fleming asked
+          readers for help to unmask the scoundrel responsible for such 'scientific vandalism'. Interestingly,
+          Maskelyne himself
+          replied, claiming that his intention had been to unmask Marconi and reveal the vulnerability of his
+          invention.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>1939</h2>
+        <h4>The Bombe:Military Code Breaker</h4>
+        <p>During the Second World War, huge military operations were dedicated to breaking the codes and ciphers
+          used by the Axis
+          Powers to transmit top-secret information, many of which were carried out at Bletchley Park in the UK.
+          In 1939, in the
+          best-known case of military codebreaking, Alan Turing, Gordon Welchman and Harold Keen developed the
+          Bombe, an
+          electromechanical device capable of deciphering German Enigma-machine-encrypted secret messages. Another
+          codebreaking
+          mission at Bletchley involved breaking the Lorenz cipher, which was used by the Germans to transmit
+          high-level military
+          intelligence. The codebreakers developed Colossus, the world's first programmable electronic computer,
+          which used
+          thermionic valves to perform boolean and counting operations.</p>
+      </div>
+    </div>
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>1957</h2>
+        <h4>The rise of the phone phreaks</h4>
+        <p>Phone hackers, aka 'phone phreaks', first emerged in the US in the late 1950s and would listen to tones
+          emitted by
+          phones to figure out how calls were routed. The unlikely father of phreaking, Joe Engressia, aka
+          Joybubbles, was a blind
+          seven-year-old boy with perfect pitch. In 1957 Engressia heard a high-pitched tone on a phone line and
+          began whistling
+          along to it at a frequency of 2600Hz – exactly that needed to communicate with phone lines. Other
+          phreakers included
+          John Draper, known as 'Captain Crunch' for his use of a whistle found in a box of Cap'n Crunch cereal,
+          and Apple
+          founders Steve Wozniak and Steve Jobs, who in 1975 began building 'blue boxes', electronic devices that
+          communicated
+          with phone lines.</p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>1970</h2>
+        <h4>Kevin Mitnick</h4>
+        <p>Remembered as one of the most notorious hackers in internet history, Kevin Mitnick started out with a
+          humble interest in
+          ham radio and computing. From the 1970s until 1995 Mitnick penetrated some of the most highly-guarded
+          networks in the
+          world, including those of Motorola and Nokia. Mitnick used elaborate social engineering schemes,
+          tricking insiders into
+          handing over codes and passwords and using the codes to access internal computer systems. He was driven
+          by a desire to
+          learn how such systems worked, but became the most-wanted cyber-criminal of the time. Mitnick was jailed
+          twice, in 1988
+          and 1995, and was placed in solitary confinement while in custody, for fear that any access to a phone
+          could lead to
+          nuclear war.</p>
+      </div>
+    </div>
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>1981</h2>
+        <h4>First Cyber Crime Conviction</h4>
+        <p>Ian Murphy, AKA Captain Zap, is the first person convicted of a cyber crime. Zap hacked into the AT&T
+          network and
+          changed internal clocks to charge off-hours rates at peak times.</p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>1982</h2>
+        <h4>First Computer Virus</h4>
+        <p>The first computer virus, Elk Cloner, is created as a prank by a 15-year-old high school student. It
+          infected Apple II
+          computers via floppy disk.</p>
+      </div>
+    </div>
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>1986</h2>
+        <h4>Honey Pot Tactic</h4>
+        <p>Using the "honey pot tactic," Clifford Stoll lures the intruder further into the network, collects data
+          and
+          tracks the
+          intrusion. His efforts eventually lead to the arrest of Markus Hess and several others in West Germany,
+          who
+          were
+          stealing and selling military passwords, software and other data to the KGB.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>1988</h2>
+        <h4>The Morris Worm</h4>
+        <p>As a graduate student at Cornell University in 1988, Robert Morris created what would be known as the
+          first worm on the
+          internet – just to give himself an idea of the size of the web. The worm was released from a computer at
+          MIT in 1988 in
+          hopes of suggesting that the creator was a student there. It started as a potentially harmless exercise
+          but quickly
+          became a vicious denial of service attack as a bug in the worm's spreading mechanism led to computers
+          being infected and
+          reinfected at a rate much faster than Morris anticipated. By the time he realised the issue and
+          attempted to rectify it
+          by telling programmers how to kill the worm, it was too late. Once discovered as the author of the worm,
+          Morris became
+          the first person to be convicted by jury trial of violating the Computer Fraud and Abuse Act.
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>1988</h2>
+        <h4>Dark Dante</h4>
+        <p>Hacking under the pseudonym 'Dark Dante', Kevin Poulsen was multi-talented and also indulged in lock
+          picking and
+          forgery. As a teenager he narrowly escaped prison and was later recruited by research institute SRI
+          International, but
+          continued to delve underground. His exploits were revealed in 1988 when an unpaid bill on a storage
+          locker led to the
+          discovery of piles of blank birth certificates, false IDs and a photo of Poulsen breaking into a
+          telephone company's
+          trailer. Poulsen fled, and a nationwide manhunt began. His most famous hack was in June 1990 when he
+          hijacked the phone
+          lines of a Los Angeles radio station that was promising a Porsche 944 S2 to the 102nd caller. His case
+          later featured on
+          NBC's 'Unsolved Mysteries', when the show's phone lines mysteriously crashed. The notorious multi-hacker
+          was finally
+          apprehended in April 1991.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>1989</h2>
+        <h4>First Ransomware Attack</h4>
+        <p>The first large-scale case of ransomware is spread via floppy disk. The malicious software is distributed
+          to 20,000
+          attendees of the World Health Organization's AIDS conference. Once downloaded, the ransomware encrypts
+          files after the
+          computer is rebooted a certain amount of times. To unlock the computer, users have to send a $189
+          "licensing fee" to the
+          PC Cyborg Corporation via PO box in Panama in exchange for a decryption key.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>1994</h2>
+        <h4>Datastream Cowboy and Kuji</h4>
+        <p>These two young hackers made history by causing havoc across global military networks, just because they
+          could. On 28
+          March 1994, administrators at the Rome Air Development Center, a US Air Force research facility,
+          discovered a password
+          'sniffer' had been installed onto their network, compromising more than 100 user accounts. Investigators
+          determined that
+          two hackers, known as Datastream Cowboy and Kuji, were behind the attack. Police informants were able to
+          provide email
+          correspondence with Datastream Cowboy, which revealed that he was a 16-year-old British boy who liked to
+          infiltrate
+          insecure military networks and even volunteered his phone number. After a month of investigations, in
+          which the pair
+          carried out a further 150 attacks, Scotland Yard closed in on Datastream Cowboy's house. Once
+          apprehended, Datastream
+          Cowboy, real name Richard Pryce, curled up into the foetal position and sobbed. It was another two
+          years before Kuji, 21-year-old Matthew Bevan, was caught.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>1999</h2>
+        <h4>First Mass-Emailing Virus</h4>
+        <p>TThe Melissa virus interrupts more than a million email accounts worldwide and causes an estimated $80
+          million in damage.
+          The virus creator, New Jersey computer programmer David L. Smith, served 20 months in federal prison and
+          was fined
+          $5,000. It is regarded as the first successful mass-emailing virus.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>2002</h2>
+        <h4>Shadow Arise</h4>
+        <p>Shadow Crew’s website is launched. The website was a message board and forum for black hat hackers. Members
+          could post,
+          share and learn how to commit a multitude of cyber crimes and avoid capture. The site lasted for 2 years before
+          being
+          shut down by the Secret Service. 28 people were arrested in the US and 6 other countries</p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>2003</h2>
+        <h4>SQL Rampage</h4>
+        <p>SQL Slammer becomes the fastest spreading worm in history. It infected SQL servers and created a denial of
+          service
+          attack which affected speeds across the Internet for quite some time. In terms of infection speed, it spread
+          across
+          nearly 75,000 machines in under 10 minutes.</p>
+      </div>
+    </div>
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>2010</h2>
+        <h4>The Google Theft</h4>
+        <p>Google's intellectual property is stolen during a highly sophisticated attack by Chinese hackers.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>2010</h2>
+        <h4>The Stuxnet Worm</h4>
+        <p>While some hackers and viruses are remembered for the unusual or funny, a malicious computer virus, first
+          discovered in
+          2010, will go down in history for a very different reason. The Stuxnet worm has been called the world's
+          first digital
+          weapon. Unlike other viruses, the worm seems to have been designed to cause physical damage to equipment
+          controlled by
+          computers. It was the first known case of hackers being able to elicit physical damage on real-world
+          equipment, making
+          it very complex and rather frightening. The worm was designed to target control systems used to monitor
+          industrial
+          facilities and was first discovered in nuclear power plants in Iran after a large number of uranium
+          centrifuges began
+          breaking unexpectedly. The worm, for which no one claimed responsibility, knocked out approximately
+          one-fifth of the
+          enrichment centrifuges used in Iran's nuclear programme, damage which is estimated to have put the
+          programme back by as
+          much as two years
+        </p>
+      </div>
+    </div>
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>2011</h2>
+        <h4>LulzSec</h4>
+        <p>The rise of social media has encouraged new groups who hack 'for the lulz' [laughs]and take to online
+          platforms to
+          publicise their feats. None have achieved such notoriety as Lulz Security, commomly known as LulzSec, a
+          break-off group
+          from hacking collective Anonymous. LulzSec publicised their hacks though Twitter with the intention of
+          embarrassing
+          website owners and poking fun at insufficient security measures. Having emerged in 2011 with an attack
+          on Fox.com, the
+          hackers went on to target more than 250 public and private entities, including an infamous attack on
+          Sony's PlayStation
+          Network. The Sony hack compromised the private data of 24.6 million customers and led to the company
+          taking down its
+          online network for 23 days. The FBI had the last laugh: after the arrest of LulzSec co-founder Hector
+          Xavier Monsegur,
+          aka Sabu, in 2012, it emerged that the hacker had been supplying information about his colleagues during
+          the campaign,
+          leading to five arrests in the UK and Ireland.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy right">
+      <div class="contenty">
+        <h2>2014</h2>
+        <h4>The Yahoo Breach</h4>
+        <p>Cyber criminals steal account information from at least 500 million Yahoo users. User information such as
+          names, email
+          addresses, telephone numbers, passwords and security questions were at risk during the breach, which was
+          not disclosed
+          until two years later in 2016.
+        </p>
+      </div>
+    </div>
+
+    <div class="boxy left">
+      <div class="contenty">
+        <h2>2017</h2>
+        <h4>WannaCry Hack</h4>
+        <p>WannaCry, a global ransomware attack, halts computer systems in more than 150 countries, affecting more
+          than 300,000
+          people
+        </p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <div class="footer">
+        <div class="contain">
+          <div class="col"></div>
+          <div class="col">
+            <h1>Threats</h1>
+              <ul>
+                <li><a href="dos.html">DDOS</a></li>
+                <li><a href="malware.html">Malware</a></li>
+                <li><a href="sql-injection.html">SQL Injection</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h1>Prevention</h1>
+            <ul>
+              <li><a href="software-updates.html">Software Updates</a></li>
+              <li><a href="password-change.html">Password Change</a></li>
+              <li><a href="data-backup.html">Data Backup</a></li>
+              <li><a href="unweb.html">Untrusted Websites</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Security</h1>
+            <ul>
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+          </div>
+          <div class="col social">
+            <p style="color: #fff; padding: 20px 0px 5px 0px;">&copy; By Ninja Turtle</p>
+            <ul>
+              <li><img src="img/badge-w.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+          <div class="clearfix"></div>
+          </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

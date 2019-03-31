@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <title>Crime Trend</title>
+  </head>
+  <style>
+
+ .flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+  margin-bottom: 50px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-box-front {
+    border: 5px solid white;
+    color: black;
+    border-radius: 10px;
+}
+
+.flip-box-front h1 {
+  margin: 30px 0 30px 0;
+}
+
+.flip-box-front h2 {
+  text-align: left;
+  padding: 30px;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+  </style>
+  <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><a class="uparrow"></a></button>
+    <div class="container">
+      <nav>
+        <input type="checkbox" id="nav" class="hidden">
+        <label for="nav" class="nav-btn">
+          <i></i>
+          <i></i>
+          <i></i>
+        </label>
+        <a href="index.html"><img src="img/badge-b.png" alt="cyber_security" style="float: left; width: 25px; margin-left: 19px; margin-top: 14px"></a>
+        <div class="logo">
+          <a href="index.html">CYBERSECURITY</a>
+        </div>
+        <div class="nav-wrapper">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="history.html">History</a></li>
+            <li><a href="threat.html">Threats</a></li>
+            <li><a href="software-updates.html">Prevention</a></li>
+            <li><a href="security.html">Security</a></li>
+            <li><a href="career.html">Career</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="breadcrumb-group">
+  <div class="breadtitle">CyberCrime</div>
+
+     <div class="breadright">
+            <ul class="breadcrumb">
+              <li><a href="cyberinfo.html">Info</a></li>
+              <li><a href="cybertype.html">CyberCrime Type</a></li>
+              <li><a href="cyberattack.html">CyberAttack</a></li>
+              <li>Latest Trend in CyberAttack</li>
+            </ul>
+     </div>
+
+    </div>
+    <div class="card-title" style="background-image: url(img/cybercrime.jpg); background-size: cover;"><h1 class="title-1">Trend</h1></div>
+
+
+    <div class="content">
+
+    <div class="card-1">
+
+    <h1>What is The Latest Trend In CyberCrime?</h1>
+    <p>Cybercriminals are using more advanced and scalable tools to breach user privacy, and they are getting results. Two
+        billion data records were compromised in 2017, and more than 4.5 billion records were breached in the first half of
+        2018
+        alone.Here are the latest trend use in 2019</p>
+
+
+    <br>
+
+    <div style="text-align: center;">
+        <img src="img/history-1.jpg" width="" alt="">
+    </div>
+
+    <br>
+    </div>
+  </div>
+  <div style="background-color: #bdc3c7;">
+    <div class="card-2">
+
+    <div class="timeline">
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h1>Advanced phishing kits</h1>
+                <h2>Four new malware samples are created every second. Phishing remains one of the most successful attack
+                    vectors due to its
+                    speed, as most phishing sites stay online for just four to five hours. Users only report 17% of phishing
+                    attacks, and it
+                    is seen as a low-risk type of activity. As a result, today only 65% of all URLs are considered
+                    trustworthy. This puts a
+                    strain on both the consumer and any enterprise with an online presence.</h2>
+            </div>
+            <div class="flip-box-back">
+                <h3>We predict that 2020 will be known for advanced phishing attacks, due to the number of new phishing kits
+                    available on
+                    the dark web. These kits enable people with only basic technical knowledge to run their own phishing
+                    attacks. With more
+                    tools available, phishing will become an even more dangerous attack method</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h1>Remote access attacks</h1>
+                <h2>Remote attacks are growing in number, as well as becoming more sophisticated. One of the main types of
+                    remote access attack in 2018 was cryptojacking, which targeted cryptocurrency owners. Another popular
+                    type of attack threatened perimeter devices.</h2>
+            </div>
+            <div class="flip-box-back">
+                <h3>According to our threat intelligence database, remote access attacks are among the most common attack
+                    vectors in a
+                    connected home. Hackers target computers, smartphones, internet protocol (IP) cameras and network
+                    attached storage (NAS)
+                    devices, since these tools usually need to have ports open and forwarded to external networks or the
+                    internet.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h1>Attacks via smartphones</h1>
+                <h2>One of the most common attack vectors to smartphones are related to unsafe browsing (phishing, spear
+                    phishing, malware).
+                    More than 60% of fraud online is accomplished through mobile platforms, according to RSA, and 80% of
+                    mobile fraud is
+                    achieved through mobile apps instead of mobile web browsers.></h2>
+            </div>
+            <div class="flip-box-back">
+                <h3>As most people use their phones to manage financial operations or handle sensitive data outside the
+                    security of their
+                    home network, this becomes a prominent threat. The fact that users typically hold all their information
+                    on their phone,
+                    and that smartphones are now used for two-factor authentication - one of the most widely used
+                    cybersecurity tools -
+                    increases the security risk if the device is lost or stolen.</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h1>Vulnerabilities in home automation and the Internet of Things</h1>
+                <h2>The consumer Internet of Things (IoT) industry is expected to grow to more than seven billion devices by
+                    the end of
+                    2020, according to Gartner. Many consumers do not see IoT devices as a vulnerability, because a
+                    significant portion of
+                    them do not have a user interface. This could lead to issues understanding what kind of data the device
+                    collects or
+                    manages.</h2>
+
+            </div>
+            <div class="flip-box-back">
+                <h3>According to CUJO AI threat intelligence data, 46% of all attack types that these devices experience are
+                    remote access
+                    attempts and 39% are used for detecting behavioural patterns. With the exponential growth of connected
+                    devices at home,
+                    these threats are likely to increase.</h3>
+            </div>
+        </div>
+    </div>
+  </div>
+
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <h1>Utilizing artificial intelligence</h1>
+                <h2>Most of the biggest industries already use machine learning (ML) and artificial intelligence (AI) to
+                    automate their
+                    processes and improve overall performance. Cybersecurity and cybercrime are no exception.
+
+                    AI is often considered to be a dual-use technology - while more cybersecurity companies are implementing
+                    AI-driven
+                    algorithms to prevent threats, hackers are also taking the opportunity to become more effective.
+
+                  </h2>
+
+            </div>
+            <div class="flip-box-back">
+                <h3>- Artificial intelligence for cybersecurity evasion. Cybercriminals are using various evasion methods to
+                    avoid
+                    detection, and AI helps to optimize different elements of this process.
+
+                    - Artificial intelligence in phishing. AI could help to create content that can pass through typical
+                    cybersecurity
+                    filters, such as email messages that are indistinguishable from those written by humans.
+
+                    - Artificial intelligence in social engineering. While social engineering is one of the most popular
+                    hacking techniques,
+                    it takes a lot of time to implement properly. AI could help in not only collecting information, but also
+                    by writing
+                    emails or calling potential victims.
+
+                    With new advances in AI-driven technology, utilizing AI in cyber attacks will become an even more
+                    popular and dangerous
+                    trend.</h3>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <div class="footer">
+        <div class="contain">
+          <div class="col"></div>
+          <div class="col">
+            <h1>Threats</h1>
+              <ul>
+                <li><a href="dos.html">DDOS</a></li>
+                <li><a href="malware.html">Malware</a></li>
+                <li><a href="sql-injection.html">SQL Injection</a></li>
+                <li><a href="phishing.html">Phishing</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h1>Prevention</h1>
+            <ul>
+              <li><a href="software-updates.html">Software Updates</a></li>
+              <li><a href="password-change.html">Password Change</a></li>
+              <li><a href="data-backup.html">Data Backup</a></li>
+              <li><a href="unweb.html">Untrusted Websites</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h1>Security</h1>
+            <ul>
+              <li><a href="firewall.html">Firewall</a></li>
+              <li><a href="antivirus.html">Antivirus</a></li>
+              <li><a href="sandbox.html">Sandbox</a></li>
+              <li><a href="crypto.html">Cryptographic Software</a></li>
+            </ul>
+          </div>
+          <div class="col social">
+            <p style="color: #fff; padding: 20px 0px 5px 0px;">&copy; By Ninja Turtle</p>
+            <ul>
+              <li><img src="img/badge-w.png" width="32" style="width: 32px;"></li>
+            </ul>
+          </div>
+          <div class="col"></div>
+          <div class="clearfix"></div>
+          </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

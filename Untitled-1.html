@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: center;
+  margin-top: 11px;
+    margin-bottom: 15px;
+}
+</style>
+</head>
+<body>
+
+<h2>Accordion with symbols</h2>
+<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
+<button class="accordion"><h1 style="display:unset;">Security engineer</h1></button>
+<div class="panel">
+    <p>Performs security monitoring, security and data/logs analysis, and forensic analysis, to detect security incidents, and mounts the incident response. Investigates and utilizes new technologies and processes to enhance security capabilities and implement improvements. May also review code or perform other security engineering methodologies.
+    </p>
+</div>
+
+<button class="accordion"><h1 style="display:unset;">Security architect</h1></button>
+<div class="panel">
+    <p>Designs a security system or major components of a security system, and may head a security design team building a new security system.
+    </p>
+</div>
+
+<button class="accordion"><h1 style="display:unset;">Security administrator</h1></button>
+<div class="panel">
+    <p>Installs and manages organization-wide security systems. This position may also include taking on some of the tasks of a security analyst in smaller organizations.</p>
+</div>
+
+<button class="accordion"><h1 style="display:unset;">Chief Information Security Officer (CISO)</h1></button>
+<div class="panel">
+    <p>A high-level management position responsible for the entire information security division/staff. The position may include hands-on technical work.
+    </p>
+</div>
+
+<button class="accordion"><h1 style="display:unset;">Chief Security Officer (CSO)</h1></button>
+<div class="panel">
+    <p>Broad titles that encompass any one or all of the other roles or titles tasked with protecting computers, networks, software, data or information systems against viruses, worms, spyware, malware, intrusion detection, unauthorized access, denial-of-service attacks, and an ever increasing list of attacks by hackers acting as individuals or as part of organized crime or foreign governments.
+    </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
