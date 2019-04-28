@@ -114,6 +114,65 @@
 
 		    </table>
 	    </div>
+
+			<div class="card-1">
+				<table id="myTable" class="usertab">
+		        <caption>All Images</caption>
+		          <thead>
+		                      <tr>
+		                          <th class='style'>ID</th>
+		                          <th class='style'>PAGE</th>
+		                          <th class='style'>IMAGE</th>
+		                          <th class='style'>Action</th>
+		                      </tr>
+		          </thead>
+		          <tbody class="art">
+
+		                      <?php
+
+		                      $mysqli = new Mysqli('localhost', 'root', '', 'articles');
+		                      $resultSet = $mysqli->query("SELECT * FROM images");
+
+		                      $i = 1;
+
+		                      while ($row = mysqli_fetch_array($resultSet, MYSQLI_ASSOC)) {
+
+		                      $id = $row['id'];
+		                      $page = $row['page'];
+		                      $image = $row['image'];
+
+		                      ?>
+		                      <tr>
+		                          <td scope="row" data-label="No."><?php echo strip_tags($id); ?></td>
+		                          <td data-label="title"><?php echo strip_tags($page); ?></td>
+		                          <td data-label="created"><img src="<?php echo strip_tags($image);?>" style="width:100%; height:10%;"></td>
+		                          <td>
+		                              <a class="hyperclass delstyle" href="admin-image.php?id=<?php echo strip_tags($id); ?>">Update</a>
+		                          </td>
+		                      </tr>
+		          </tbody>
+		                      <?php
+
+		                      $i++;
+
+		                      }
+		                      if (isset($_GET['deleteart'])) {
+
+		                        $delete = $_GET['deleteart'];
+
+		                        $mysqli = new Mysqli('localhost', 'root', '', 'articles');
+		                        $resultSet = $mysqli->query("DELETE FROM posts WHERE id='$delete'");
+
+		                        $URL="admin-profile.php";
+		                        echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
+		                        echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';
+
+		                }
+		              ?>
+
+		    </table>
+	    </div>
+
     </div>
 		<div class="footer">
         <div class="contain">

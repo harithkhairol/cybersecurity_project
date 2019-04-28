@@ -11,15 +11,17 @@
   </head>
   <style>
 
+ 
  .flip-box {
   background-color: transparent;
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 350px;
   perspective: 1000px;
-  margin-bottom: 50px;
+  margin:auto;
 }
 
 .flip-box-inner {
+  margin-top: 80px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -53,8 +55,7 @@
 }
 
 .flip-box-front h2 {
-  text-align: left;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
 .flip-box-back {
@@ -70,6 +71,27 @@
   box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: dodgerblue; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
   </style>
   <body>
     <button onclick="topFunction()" id="topBtn" title="Go to top"><a class="uparrow"></a></button>

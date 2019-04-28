@@ -11,16 +11,18 @@
   </head>
   <style>
 
+ 
  .flip-box {
   background-color: transparent;
-  width: 100%;
-  height: 400px;
+  width: 80%;
+  height: 350px;
   perspective: 1000px;
+  margin:auto;
 }
 
 .flip-box-inner {
+  margin-top: 80px;
   position: relative;
-  margin-top: 200px;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -52,6 +54,10 @@
   margin: 30px 0 30px 0;
 }
 
+.flip-box-front h2 {
+  padding-bottom: 30px;
+}
+
 .flip-box-back {
   background-color: dodgerblue;
   color: white;
@@ -65,6 +71,27 @@
   box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: dodgerblue; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
   </style>
   <body>
     <button onclick="topFunction()" id="topBtn" title="Go to top"><a class="uparrow"></a></button>
@@ -133,7 +160,7 @@
         <div class="flip-box-inner">
             <div class="flip-box-front">
                 <h2>WannaCry: A real epidemic</h2>
-                <h2><img src="img/wannacry.jpg" alt=""></h2>
+                <h2><img src="img/wannacry.jpg" alt="" width= 350px height=250px></h2>
             </div>
             <div class="flip-box-back">
                 <h4>The WannaCry attack put ransomware, and computer malware in general, on everyone’s map, even those who
@@ -158,7 +185,7 @@
         <div class="flip-box-inner">
             <div class="flip-box-front">
                 <h2>NotPetya/ExPetr: The costliest cyberattack to date</h2>
-                <h2><img src="img/notpetya.png" alt=""></h2>
+                <h2><img src="img/notpetya.png" alt="" width= 350px height=250px></h2>
             </div>
             <div class="flip-box-back">
                 <h4>That said, the title of most costly epidemic does not go to WannaCry, but rather to another ransomware
@@ -190,7 +217,7 @@
         <div class="flip-box-inner">
             <div class="flip-box-front">
                 <h2>Stuxnet: A smoking cybergun</h2>
-                <h2><img src="img/stuxnet.jpg" width="1000" alt=""></h2>
+                <h2><img src="img/stuxnet.jpg" width= 350px height=250px alt=""></h2>
             </div>
             <div class="flip-box-back">
                 <h4>Probably the most famous attack was the complex, multifaceted malware that disabled uranium-enrichment
@@ -220,7 +247,7 @@
         <div class="flip-box-inner">
             <div class="flip-box-front">
                 <h2>DarkHotel: Spies in suite rooms</h2>
-                <h2><img src="img/darkhotel.jpeg" width="600" alt=""></h2>
+                <h2><img src="img/darkhotel.jpeg" width= 350px height=250px alt=""></h2>
             </div>
             <div class="flip-box-back">
                 <h4>It is no secret that public Wi-Fi networks in cafés or airports are not the most secure. Yet many
@@ -245,7 +272,7 @@
         <div class="flip-box-inner">
             <div class="flip-box-front">
                 <h2>Mirai: The fall of the Internet</h2>
-                <h2><img src="img/mirai.png" alt=""></h2>
+                <h2><img src="img/mirai.png" alt="" width= 350px height=250px></h2>
 
             </div>
             <div class="flip-box-back">
